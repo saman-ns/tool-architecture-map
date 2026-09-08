@@ -1,6 +1,6 @@
 # architecture-map
 
-A Claude Code / Claude agent **skill**: map a code repo's architecture as a single self-contained HTML **C4-style container diagram** — labeled tier boxes (frontend / backend / data / external / MCP) with components nested inside and labeled arrows showing how they talk.
+A [Claude Code / Claude agent **skill**](https://docs.claude.com/en/docs/claude-code/skills) — a packaged Markdown instruction set Claude loads automatically when a task matches. This one maps a code repo's architecture as a single self-contained HTML **C4-style container diagram** — labeled tier boxes (frontend / backend / data / external / MCP) with components nested inside and labeled arrows showing how they talk.
 
 Every box and arrow must trace to code that actually runs — the skill reads real source (imports, call sites, config, dependency manifests), never the prose.
 
@@ -11,10 +11,10 @@ Every box and arrow must trace to code that actually runs — the skill reads re
 Copy the skill into your Claude skills directory:
 
 ```bash
-git clone <this-repo-url> ~/.claude/skills/architecture-map
+git clone https://github.com/saman-ns/tool-architecture-map.git ~/.claude/skills/architecture-map
 ```
 
-Claude discovers it automatically on the next session.
+Claude discovers it automatically on the next session. (Note the clone target folder name — Claude matches skills by directory name under `~/.claude/skills/`, not by repo name.)
 
 ## Contents
 
@@ -22,3 +22,7 @@ Claude discovers it automatically on the next session.
 - `references/c4-style.md` — C4 diagram conventions
 - `references/detection.md` — how to detect tiers/components from source
 - `assets/template.html` — the HTML diagram template
+
+## License
+
+MIT — see [LICENSE](LICENSE).
