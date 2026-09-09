@@ -22,6 +22,7 @@ Claude discovers it automatically on the next session. (Note the clone target fo
 - `references/c4-style.md` — C4 diagram conventions
 - `references/detection.md` — how to detect tiers/components from source
 - `assets/template.html` — the HTML diagram template
+- `examples/ai-chatbot.html` — a generated map of [vercel/ai-chatbot](https://github.com/vercel/ai-chatbot), download and open it in a browser to try the drill-down, data-flow drawer, and network toggle yourself
 
 ## License
 
